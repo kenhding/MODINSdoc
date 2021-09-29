@@ -62,9 +62,9 @@ Further, we set up the display variable $DISPLAY with your own computer IP:
 
 ::
 
-   export DISPLAY=10.136.26.238:0.0
+   export DISPLAY=<ip address>:0.0
 
-where you have to replace ``10.136.26.238``with your own IP address. The last step is just open freeview:
+``<ip address>`` have to fill your own computer IP address. The last step is just open freeview:
 
 ::
 
