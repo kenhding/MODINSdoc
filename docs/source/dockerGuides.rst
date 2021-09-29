@@ -31,6 +31,9 @@ Most neuroimaging software offered their official Docker image which can be dire
 There are several popular software installed already, for an example of using ``mriqc`` which is a tool to perform quality assessments for imaging data, please check the `notes <https://sarenseeley.github.io/BIDS-fmriprep-MRIQC.html#mriqc>`_
 
 
+Freeview example with Docker
+----
+
 Here, I introduce a brief example of using a GUI app such as ``freeview`` with Docker.
 
 
