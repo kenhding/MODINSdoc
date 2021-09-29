@@ -31,10 +31,12 @@ The current configuration disabled the direct access from users to the storage d
 
 The new server has python 2.7.5, 3.6.8, and 3.7.9 installed. As we decided not to use Anaconda_ to manage packages, a personal/customized python environment can be managed by ``virtualenv``. Installing packages directly from the terminal, which may pollute the common python environment, is not recommended. Virtual environment steps can be found on `Mogon WIKI <https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:python?s[]=virtual>`_  
 
-**Software**
+**Software:**
+
 Popular neuroimaging software such as FSL, freesurfer, etc are loaded in Docker, the data processing are tested already, you can also create your software environment without disturbing the default one. In case new software is needed, please call 7849. 
 
-**Matlab**
+**Matlab:**
+
 Matlab path file is usually saved in ``pathdef.m``, users do not have permission to modify it. The first time you add your path, Matlab will ask you to create a local ``pathdef.m`` for yourself without bothering others. Toolbox is also recommended to install locally under your account.
 
 
