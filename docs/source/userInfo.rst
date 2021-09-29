@@ -3,7 +3,7 @@ User Info
 
 User Storage
 ----
-The new server equipped a total storage of 15.4TB(14*1.1TB), we used hardware RAID_ to pretect the data loss due to hardward defects. Three main disks with 4.4TB each for the major storage, each disk configured with RAID5 thus 3.3TB is available for read/write. The user accounts located under the ``/home`` path configured RAID2. The overview and the mount path as below:
+The new server equipped a total storage of 15.4TB(14*1.1TB), we used hardware RAID_ to pretect the data loss due to hardward defects. Three main disks with 4.4TB each for the major storage, each disk configured with RAID5 thus 3.3TB is available for read/write. The user accounts located under the ``/home`` path configured RAID1. The overview and the mount path as below:
 
 
 ::
@@ -25,11 +25,11 @@ User Permission
 
 **Storage:**
 
-The current configuration disnabled the direct access from users to the storage disks via ``/mnt`` path, you will find a softlink folder under your own ``/home/<user name>`` path. **Very important: Please store and process your data in the given storage folder under your home path, processing your data directly under your home directory will be very slow due to the RAID2 setup and consume the limit sharing space between users**
+The current configuration disnabled the direct access from users to the storage disks via ``/mnt`` path, you will find a softlink folder under your own ``/home/<user name>`` path. **Very important: Please store and process your data in the given storage folder, processing your data directly under your home directory will be very slow due to the RAID1 setup and consume the limit sharing space between users**
 
 **Python:**
 
-The new server has python 2.7.5, 3.6.8 and 3.7.9 installed. As we decided not to use Anaconda_ to manage packages, personal/customised python environment can be manage by ``virtualenv`` which used in Mogon_ also. Installing packages directly from the terminal, which may pollute the common python environment, is not recommended. 
+The new server has python 2.7.5, 3.6.8 and 3.7.9 installed. As we decided not to use Anaconda_ to manage packages, personal/customised python environment can be manage by ``virtualenv``. Installing packages directly from the terminal, which may pollute the common python environment, is not recommended.  
 
 **Software**
 Popular neuroimaging softwares such as FSL, freesurfer, etc are loaded in Docker, the data processing are tested already, you can also create your own software environment without disturbing the default one. In case new software needed, please call 7849. 
