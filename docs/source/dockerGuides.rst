@@ -83,7 +83,7 @@ Further, we set up the display variable ``$DISPLAY`` with your own computer IP:
    
 .. Note::
 
-   Running FSL in Docker may report an error related to ``$USER`` at the start of processing, this is because the ``$USER`` variable in the docker is not specified, you can either try ``export USER=root`` or manually add a user which matches your server user name in the container before processing data.  In Docker, output files are usually owned by ``root`` user that is why you will involve adding a user in your script.
+   Running FSL in Docker may report an error related to ``$USER`` at the start of processing, this is because the ``$USER`` variable in the docker is not specified, you can either try ``export USER=root`` or manually adding a user which matches your server user name in the container before processing data.  In Docker, output files are usually owned by ``root`` user that is why you will involve adding a user in your script.
 
 
 
