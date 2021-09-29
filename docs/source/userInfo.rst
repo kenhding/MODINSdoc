@@ -1,6 +1,24 @@
 User Info
 ====
 
+
+Server Access 
+----
+
+Old server:
+
+::
+
+ssh <user name>@10.136.26.181
+
+
+New server:
+
+::
+
+ssh <user name>@10.136.26.131
+
+
 User Storage
 ----
 The new server was equipped with a total storage of 15.4TB(14*1.1TB), we used hardware RAID_ to protect the data loss due to hardware defects. Three main disks with 4.4TB each for the major storage, each disk configured with RAID5 thus 3.3TB is available for read/write. The user accounts are located under the ``/home`` path configured RAID1. The overview and the mount path as below:
@@ -40,6 +58,13 @@ Popular neuroimaging software such as FSL, freesurfer, etc are loaded in Docker,
 Matlab path file is usually saved in ``pathdef.m``, users do not have permission to modify it. The first time you add your path, Matlab will ask you to create a local ``pathdef.m`` for yourself without bothering others. Toolbox is also recommended to install locally under your account.
 
 
+Data Backup
+----
 
+The NAS_ is performing differential backup every first day of each month for both servers. Data stored in the directory ``/home``. ``/media``(old server) and ``/mnt``(new server) will be synchronized. 
+
+
+
+.. _NAS: https://shop.westerndigital.com/de-at/products/network-attached-storage/wd-my-cloud-pro-series-pr4100#WDBNFA0000NBK-EESN
 .. _Anaconda: https://www.anaconda.com/
 .. _RAID: https://en.wikipedia.org/wiki/RAID
