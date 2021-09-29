@@ -43,7 +43,11 @@ User Permission
 
 **Storage:**
 
-The current configuration disabled the direct access from users to the storage disks via ``/mnt`` path, you will find a soft link folder under your own ``/home/<user name>`` path. **Very important: Please store and process your data in the given storage folder, processing your data directly under your home directory will be very slow due to the RAID1 setup and consume the limit sharing space between users**
+The current configuration disabled the direct access from users to the storage disks via ``/mnt`` path, you will find a soft link folder under your own ``/home/<user name>`` path.
+
+.. warning::
+
+  Please store and process your data in the given storage folder. Processing your data directly under your home directory will be very slow due to the RAID1 setup and consume the limit sharing space between users
 
 **Python:**
 
