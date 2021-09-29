@@ -49,7 +49,7 @@ where ``-it`` instructs Docker to allocate a pseudo-TTY connected to the contain
 
    Importantly, please specify the ``--name`` involves your user name, otherwise, Docker will assign a name randomly, these random names would be seen as a redundant process and cleaned during the maintenance. In addition, ``-it`` mostly used in debugging sessions, you may use ``-rm`` when running real analysis.
 
-One the previous step executed, you will see the command header becomes: 
+Once the previous step executed, you will see the command header becomes: 
 
 ::
 
