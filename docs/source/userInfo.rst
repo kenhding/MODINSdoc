@@ -4,19 +4,20 @@ User Info
 
 Server Access 
 ----
+Here are the addess to both servers.
 
 Old server:
 
 ::
 
-ssh <user name>@10.136.26.181
+  ssh <user name>@10.136.26.181
 
 
 New server:
 
 ::
 
-ssh <user name>@10.136.26.131
+  ssh <user name>@10.136.26.131
 
 
 User Storage
