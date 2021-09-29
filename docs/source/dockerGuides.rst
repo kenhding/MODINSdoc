@@ -14,4 +14,4 @@ Docker is tutorial_
    
    
    
-   _tutorial: https://docker-curriculum.com/
+   :_tutorial https://docker-curriculum.com/
