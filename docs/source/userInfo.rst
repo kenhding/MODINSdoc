@@ -48,7 +48,7 @@ The current configuration disabled the direct access from users to the storage d
 
 .. warning::
 
-  Please store and process your data in the given storage folder. Processing your data directly under your home directory will be very slow due to the RAID1 setup and consume the limit sharing space between users
+  Please store and process your data in the given storage folder. Processing your data directly under your home directory will be very slow due to the RAID1 setup and consume the limit sharing space between users. In case you need to share your data with other users, please call 7849.
 
 **Python:**
 
@@ -56,7 +56,7 @@ The new server has python 2.7.5, 3.6.8, and 3.7.9 installed. As we decided not t
 
 **Software:**
 
-Popular neuroimaging software such as FSL, freesurfer, etc are loaded in Docker, the data processing are tested already, you can also create your software environment without disturbing the default one. In case new software is needed, please call 7849. 
+Popular neuroimaging software such as FSL, freesurfer, etc are loaded in Docker, the data processing are tested already, you can also create your software environment without disturbing the default one. In case new software is needed, please call the hotline 7849. 
 
 **Matlab:**
 
