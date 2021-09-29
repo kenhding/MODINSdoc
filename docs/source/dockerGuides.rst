@@ -34,6 +34,9 @@ There are several popular software installed already, for an example of using ``
 Freeview example with Docker
 ----
 
+User Permission
+----
+
 Here, I introduce a brief example of using a GUI app such as ``freeview`` with Docker.
 
 
