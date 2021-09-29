@@ -1,7 +1,7 @@
 MODINS Documentation
 ===================================
 
-This documentation provides information for current server setup
+This documentation provides information for current server setup. 
 
 .. note::
 
@@ -12,7 +12,7 @@ Contents
 
 .. toctree::
 
-   matlabSettings
+   userInfo
    dockerGuides
+   matlabSettings
    externelAccess
-   userStorage
