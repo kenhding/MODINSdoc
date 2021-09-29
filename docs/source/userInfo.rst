@@ -35,7 +35,7 @@ The new server has python 2.7.5, 3.6.8, and 3.7.9 installed. As we decided not t
 Popular neuroimaging software such as FSL, freesurfer, etc are loaded in Docker, the data processing are tested already, you can also create your software environment without disturbing the default one. In case new software is needed, please call 7849. 
 
 **Matlab**
-Matlab path file is usually saved in ``pathdef.m``, users do not have permission to modify it. The first time you add your path, Matlab will ask you to create a local pathdef.m for yourself without bothering others. Toolbox is also recommended to install locally under your account.
+Matlab path file is usually saved in ``pathdef.m``, users do not have permission to modify it. The first time you add your path, Matlab will ask you to create a local ``pathdef.m`` for yourself without bothering others. Toolbox is also recommended to install locally under your account.
 
 
 
