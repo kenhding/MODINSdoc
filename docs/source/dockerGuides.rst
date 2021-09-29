@@ -1,10 +1,10 @@
 Docker Info
 ====
 
-For group member who is new to Docker, there are nice tutorial_ and videos_ to learn Docker. 
-Why are we using Docker? We had so many issues with the old server due to the dependencies. For instance, using ``fmriprep`` requires 8 other softwares, each of them needs some other packages. In the end of the day, the software may still not work because of compatibility or other unkonwn conflicts. While Docker runs software in isolated container(environment) without bothering the OS configuration.
+For group member who is new to Docker, there is nice tutorial_ and videos_ to learn Docker. 
+Why are we using Docker? We had so many issues with the old server due to the dependencies. For instance, using ``fmriprep`` requires 8 other software, each of them needs some other packages. At the end of the day, the software may still not work because of compatibility or other unknown conflicts. While Docker runs software in an isolated container(environment) without bothering the OS configuration.
 
-Most of neuroimaging softwares have offered their official Docker image which can be directly used for your analysis. One you have been added to the Docker group (if you are not, please call 7849), you can use Docker commands.
+Most neuroimaging software offered their official Docker image which can be directly used for your analysis. Once you have been added to the Docker group (if you are not, please call 7849), you can use Docker commands.
 
 .. _tutorial: https://docker-curriculum.com/
 .. _videos: https://www.youtube.com/watch?v=fqMOX6JJhGo
@@ -31,7 +31,7 @@ Most of neuroimaging softwares have offered their official Docker image which ca
 There are several popular software installed already, for an example of using ``mriqc`` which is a tool to perform quality assessments for imaging data, please check the `notes <https://sarenseeley.github.io/BIDS-fmriprep-MRIQC.html#mriqc>`_
 
 
-Here, I introduce an brief example of using GUI app such as ``freeview`` with Docker.
+Here, I introduce a brief example of using a GUI app such as ``freeview`` with Docker.
 
 
 Firstly, we lunch freesurfer from Docker by: 
@@ -44,34 +44,34 @@ where ``-it`` instructs Docker to allocate a pseudo-TTY connected to the contain
 
 .. warning::
 
-   Importantly, please specify the ``--name`` involves your user name, otherwise Docker will assign a name randomly, these random named would be seen as a redundant process and cleaned during the maintanance. In addition, ``it`` mostly used in debugging session, you may use ``-rm`` when running real analysis.
+   Importantly, please specify the ``--name`` involves your user name, otherwise, Docker will assign a name randomly, these random names would be seen as a redundant process and cleaned during the maintenance. In addition, ``-it``mostly used in debugging sessions, you may use ``-rm`` when running real analysis.
 
-One the previous step excuted, you will see the command header becomes: 
+One the previous step executed, you will see the command header becomes: 
 
 ::
 
    [root@<container ID>]#
    
-Because freesurfer requires a license, you need to download a free license in order to use the software via link_. Then, copy the license file to the revelent path in the freesurfer software: 
+Because freesurfer requires a license, you need to download a free license in order to use the software via link_. Then, copy the license file to the relevant path in the freesurfer software: 
 
 ::
 
    cp /mnt/data/derivatives/license.txt /usr/local/freesurfer/.license
    
-Further, setup the display variable $DISPLAY with your own computer IP:
+Further, we set up the display variable $DISPLAY with your own computer IP:
 
 ::
 
    export DISPLAY=10.136.26.238:0.0
 
-where you have to replace ``10.136.26.238`` by your own ip address. Last step is just open freeview:
+where you have to replace ``10.136.26.238``with your own IP address. The last step is just open freeview:
 
 ::
 
    freeview
 
 .. image:: freeview_img.png
-   :width: 80pt
+   :width: 600pt
 
 
 
