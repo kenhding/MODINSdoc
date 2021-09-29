@@ -61,7 +61,7 @@ Because freesurfer requires a license, you need to download a free license in or
 
    cp /mnt/data/derivatives/license.txt /usr/local/freesurfer/.license
    
-Further, we set up the display variable $DISPLAY with your own computer IP:
+Further, we set up the display variable ``$DISPLAY`` with your own computer IP:
 
 ::
 
