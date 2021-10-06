@@ -14,5 +14,6 @@ Contents
 
    userInfo
    dockerGuides
+   software
    matlabSettings
    externelAccess
