@@ -29,6 +29,7 @@ The ``Name`` column shows the app name which is the command to open it. E.g by t
    
 .. Note::
 
+    IDE Apps such as VS code and pycharm support ssh remote development, which means you can install the IDE on your PC and work remotely on the server. Without X11, this gives a better visual experience.
     If the App you need is not installed, please call 7849.
 
 
