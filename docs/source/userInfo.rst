@@ -6,14 +6,14 @@ Server Access
 ----
 Here are the addess to both servers.
 
-Old server:
+Server1:
 
 ::
 
   ssh <user name>@10.136.26.181
 
 
-New server:
+Server2:
 
 ::
 
