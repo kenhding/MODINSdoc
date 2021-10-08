@@ -66,7 +66,7 @@ Matlab path file is usually saved in ``pathdef.m``, users do not have permission
 Data Backup
 ----
 
-The NAS_ is performing differential backup every first day of each month for both servers. Data stored in the directory ``/home``  ``/media`` (old server) and ``/mnt`` (new server) will be synchronized. 
+The NAS_ is performing differential backup every first day of each month for both servers. Data stored in the directory ``/home``  ``/media`` (Server1) and ``/mnt`` (Server2) will be synchronized. 
 
 
 
