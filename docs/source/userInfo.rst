@@ -22,7 +22,7 @@ Server2:
 
 User Storage
 ----
-The new server was equipped with a total storage of 15.4TB(14*1.1TB), we used hardware RAID_ to protect the data loss due to hardware defects. Three main disks with 4.4TB each for the major storage, each disk configured with RAID5 thus 3.3TB is available for read/write. The user accounts are located under the ``/home`` path configured RAID1. The overview and the mount path as below:
+Server2 was equipped with a total storage of 15.4TB(14*1.1TB), we used hardware RAID_ to protect the data loss due to hardware defects. Three main disks with 4.4TB each for the major storage, each disk configured with RAID5 thus 3.3TB is available for read/write. The user accounts are located under the ``/home`` path configured RAID1. The overview and the mount path as below:
 
 
 ::
@@ -52,7 +52,7 @@ The current configuration disabled the direct access from users to the storage d
 
 **Python:**
 
-The new server has python 2.7.5, 3.6.8, and 3.7.9 installed. As we decided not to use Anaconda_ to manage packages, a personal/customized python environment can be managed by ``virtualenv``. Installing packages directly from the terminal, which may pollute the common python environment, is not recommended. Virtual environment steps can be found on `Mogon WIKI <https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:python?s[]=virtual>`_  
+Server2 has python 2.7.5, 3.6.8, and 3.7.9 installed. As we decided not to use Anaconda_ to manage packages, a personal/customized python environment can be managed by ``virtualenv``. Installing packages directly from the terminal, which may pollute the common python environment, is not recommended. Virtual environment steps can be found on `Mogon WIKI <https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:python?s[]=virtual>`_  
 
 **Software:**
 
