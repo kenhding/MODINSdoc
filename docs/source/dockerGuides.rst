@@ -47,7 +47,7 @@ where ``-it`` instructs Docker to allocate a pseudo-TTY connected to the contain
 
 .. warning::
 
-   Importantly, please specify the ``--name`` involves your user name, otherwise, Docker will assign a name randomly, these random names would be seen as a redundant process and cleaned during the maintenance. In addition, you may add ``--rm`` flag indicating automatic removal of the container when it exits.
+   Importantly, please specify the ``--name`` involves your user name, otherwise, Docker will assign a name randomly, these random names would be seen as a redundant process and cleaned during the regular maintenance. In addition, you may add ``--rm`` flag indicating removal of the container after exit.
 
 Once the previous step executed, you will see the command header becomes: 
 
