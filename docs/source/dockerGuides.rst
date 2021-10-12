@@ -98,7 +98,7 @@ Start container with Neurodesktop image, this process takes 5 mins to be finishe
    docker run   --shm-size=1gb -it --privileged --name neurodesktop   -v ~/neurodesktop-storage:/neurodesktop-storage   -e HOST_UID="$(id -u)" -e HOST_GID="$(id -g)"   -p 8080:8080 -h neurodesktop-20210929   vnmd/neurodesktop:20210929
 
 
-Once you have seen a log message as ``http://localhost:8080/#/?username=user&password=password `` then you can open your browser and type the following code. The port number may be different sine you may specify one other than 8080. 
+Once you have seen a log message as ``http://localhost:8080/#/?username=user&password=password`` then you can open your browser and type the following code. The port number may be different sine you may specify one other than 8080. 
 
 :: 
 
