@@ -86,6 +86,48 @@ Further, we set up the display variable ``$DISPLAY`` with your own computer IP:
    Running FSL in Docker may report an error related to ``$USER`` at the start of processing, this is because the ``$USER`` variable in the docker is not specified, you can either try ``export USER=root`` or manually adding a user which matches your server user name in the container before processing data.  In Docker, output files are usually owned by ``root`` user that is why you will involve adding a user in your script.
 
 
+Neurodesktop example with Docker
+----
+
+Since GUI app is not guaranteed included in the official Docker image, there is an excellent solution from Neurodesktop!!! For the official tutorial, please check `here. <https://neurodesk.github.io/docs/neurodesktop/getting-started/linux/>`_ I just give a simple example here for your convenience.
+
+Start container with Neurodesktop image, this process takes 5 mins to be finished. The ``-p`` option specifies the port number which should be different among users on the server.
+
+::
+
+docker run   --shm-size=1gb -it --privileged --name neurodesktop   -v ~/neurodesktop-storage:/neurodesktop-storage   -e HOST_UID="$(id -u)" -e HOST_GID="$(id -g)"   -p 8080:8080 -h neurodesktop-20210929   vnmd/neurodesktop:20210929
+
+
+Once you have seen a log message as ``http://localhost:8080/#/?username=user&password=password !!!`` then you can open your browser and type the following code. The port number may be different sine you may specify one other than 8080. 
+
+:: 
+
+http://10.136.26.131:<port>/#/?username=user&password=password
+
+The browser will display the desktop as below, it contains almost all the imaging processing apps and you can also use the GUI freely:
+
+.. image:: neurodesktop.png
+   :width: 600pt
+
+.. warning::
+
+  When the first time opening an app, the desktop will automatically download the corresponding images and load for you. Before downloading, please do the follows
+  
+In your mount folder ``neurodesktop-storage``, there is a file named `` neuroDesktopBashrc`` which should override the default one. Firstly can open a terminal and navigate to the mounted folder, for example: 
+
+:: 
+
+   cd /neurodesktop-storage/
+
+then execute the following to copy: 
+
+:: 
+
+   cp neuroDesktopBashrc ~/.bashrc
+   
+Once this is done successfully, the apps should work properly.
+
+
 
    
    
