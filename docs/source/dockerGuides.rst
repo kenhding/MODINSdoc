@@ -102,7 +102,7 @@ Once you have seen a log message as ``http://localhost:8080/#/?username=user&pas
 
 :: 
 
-http://10.136.26.131:<port>/#/?username=user&password=password
+   http://10.136.26.131:<port>/#/?username=user&password=password
 
 The browser will display the desktop as below, it contains almost all the imaging processing apps and you can also use the GUI freely:
 
