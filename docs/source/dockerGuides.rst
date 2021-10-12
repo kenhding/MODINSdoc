@@ -113,7 +113,7 @@ The browser will display the desktop as below, it contains almost all the imagin
 
   When the first time opening an app, the desktop will automatically download the corresponding images and load for you. Before downloading, please do the follows
   
-In your mount folder ``neurodesktop-storage``, there is a file named `` neuroDesktopBashrc``(if you did not find, please call 7849) which should override the default one inside of the container. Firstly can open a terminal and navigate to the mounted folder, for example: 
+In your mount folder ``neurodesktop-storage``, there is a file named ``neuroDesktopBashrc`` (if you did not find, please call 7849) which should override the default one inside of the container. Firstly can open a terminal and navigate to the mounted folder, for example: 
 
 :: 
 
