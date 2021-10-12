@@ -18,15 +18,18 @@ Most neuroimaging software offered their official Docker image which can be dire
 ::
 
    REPOSITORY              TAG             IMAGE ID       CREATED         SIZE
-   freesurfer/freesurfer   freeviewAvail   09e4aa459595   24 hours ago    15.4GB
-   centos                  centos7         eeb6ee3f44bd   13 days ago     204MB
-   centos                  centos8         5d0da3dc9764   13 days ago     231MB
-   nipreps/fmriprep        latest          fcfc5f9bfd20   3 weeks ago     24.9GB
-   freesurfer/freesurfer   7.2.0           8e15973a3dcd   3 weeks ago     12.5GB
-   hello-world             latest          d1165f221234   6 months ago    13.3kB
+   dsistudio/dsistudio     latest          a7cbee1c3895   11 days ago     1.78GB
+   vnmd/neurodesktop       20210929        faea6488bafb   12 days ago     3.47GB
+   freesurfer/freesurfer   freeviewAvail   09e4aa459595   2 weeks ago     15.4GB
+   hello-world             latest          feb5d9fea6a5   2 weeks ago     13.3kB
+   hello-world             linux           feb5d9fea6a5   2 weeks ago     13.3kB
+   centos                  centos7         eeb6ee3f44bd   3 weeks ago     204MB
+   centos                  centos8         5d0da3dc9764   3 weeks ago     231MB
+   nipreps/fmriprep        latest          fcfc5f9bfd20   5 weeks ago     24.9GB
+   freesurfer/freesurfer   7.2.0           8e15973a3dcd   5 weeks ago     12.5GB
+   mrtrix3/mrtrix3         3.0.3           5902d5a6aa38   2 months ago    1.93GB
    poldracklab/mriqc       0.16.1          77dee0ba9d5a   8 months ago    8.38GB
    poetair/fsl6.0.3_x11    latest          9a71492f908e   10 months ago   14.4GB
-
 
 There are several popular software installed already, for an example of using ``mriqc`` which is a tool to perform quality assessments for imaging data, please check the `notes <https://sarenseeley.github.io/BIDS-fmriprep-MRIQC.html#mriqc>`_
 
