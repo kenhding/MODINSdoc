@@ -4,7 +4,7 @@ User Info
 
 Server Access 
 ----
-Here are the addess to both servers.
+Here are the addess to both servers. If you enter 3 times incorrect password, your account will be blocked for 5 mins in Server 2.
 
 Server1:
 
