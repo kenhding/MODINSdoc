@@ -92,7 +92,7 @@ Further, we set up the display variable ``$DISPLAY`` with your own computer IP:
 Neurodesktop example with Docker
 ----
 
-Since GUI related components are not usually included in official Docker images, there is a solution from Neurodesktop!!! For the official tutorial, please check `here. <https://neurodesk.github.io/docs/neurodesktop/getting-started/linux/>`_ I just give a simple example here for your convenience.
+Since GUI related components are not usually included in official Docker images and install these library may not be ideal solution but we can utilize Neurodesktop!!! For the official tutorial, please check `here. <https://neurodesk.github.io/docs/neurodesktop/getting-started/linux/>`_ I just give a simple example here for your convenience.
 
 Start container with Neurodesktop image, this process takes 5 mins to be finished. The ``-p`` option specifies the port number which should be different among users on the server.
 
