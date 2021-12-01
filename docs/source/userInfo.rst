@@ -52,7 +52,7 @@ The current configuration disabled the direct access from users to the storage d
 
 **Python:**
 
-Server2 has python 2.7.5, 3.6.8, and 3.7.9 installed. As we decided not to use Anaconda_ to manage packages, a personal/customized python environment can be managed by ``virtualenv``. Installing packages directly from the terminal, which may pollute the common python environment, is not recommended. Virtual environment steps can be found on `Mogon WIKI <https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:python?s[]=virtual>`_  
+Server2 has python 2.7.5, 3.6.8, and 3.7.9 installed. A personal/customized python environment can be managed by ``virtualenv``. Installing packages via ``pip`` is allowed with virtual environment only. Virtual environment steps can be found on `Mogon WIKI <https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:python?s[]=virtual>`_  
 
 **Software:**
 
