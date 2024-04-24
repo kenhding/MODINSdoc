@@ -2,8 +2,8 @@
 
 # -- Project information
 
-project = 'MODINSdoc'
-copyright = '2021, Ken'
+project = 'NESA-WS'
+copyright = '2024, Ken'
 author = 'Ken'
 
 release = '0.1'
